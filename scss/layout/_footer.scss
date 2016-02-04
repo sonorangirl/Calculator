@@ -1,0 +1,92 @@
+// ==========================================================================
+// Footer Styles
+// ==========================================================================
+
+.footer {
+    position: absolute;
+    bottom: 0;
+  	width: 100%;
+  	/* Set the fixed height of the footer here */
+ 	  height: 60px;
+ 	  clear: both;
+  	padding-top: 20px;
+  	background-color: $color-secondary;
+    text-align: right;
+  	
+  	p {
+  		color: $color-light;
+  	}
+
+    a {
+      color: $color-dark;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+}
+
+@mixin flower($rad, $top, $bg-c, $bd-color, $bd-width, $left) {
+  height: $rad;
+  width: $rad;
+  -webkit-clip-path: polygon(37% 7%, 50% 10%, 63% 7%, 77% 10%, 96% 6%, 100% 100%, 0 100%, 4% 6%, 23% 10%);
+  clip-path: polygon(37% 7%, 50% 10%, 63% 7%, 77% 10%, 96% 6%, 100% 100%, 0 100%, 4% 6%, 23% 10%);
+  margin-top: $top;
+  margin-left: $left;
+  background-color: $bg-c;
+  border-radius: 100%;
+  border: $bd-width solid $bd-color;
+  box-shadow: 0 0 0 .3em darken($bd-color, 4), 0 0 0 .2em lighten($bg-c, 4) inset;
+  
+   span {
+       top: $bd-width + 2.8em;
+       left: $rad / 5;
+       z-index: -10;
+    }
+}
+
+@mixin leaf ($deg, $rad, $left, $top) {
+     content: '';
+     transform: rotate($deg);
+     width: $rad;
+     height: $rad;
+     left: $left;
+     top: $top;
+     display: block;
+     background: darken($color-secondary, 3);
+     border-radius: 0em 3em 0em 2.5em;
+     box-shadow: 0 0 0 .2em darken($color-secondary, 5) inset;
+     position: absolute;
+}
+
+.flower {
+   top: 10em;
+   position: absolute;
+   z-index: -1;
+   
+   span {
+      background: $color-secondary;
+      width: .5em;
+      height: 20em;
+      display: block;
+      position: absolute;
+ 
+      &:after {
+         @include leaf(88deg, 3em, .4em, 1.2em);
+      }
+     
+      &:before {
+         @include leaf(8deg, 3em, -2.7em, 5.2em);
+      }
+   }
+}
+
+.flower.one {
+   @include flower(4.5em, 14em, $color-accent, darken($color-accent, 10%), 1.1em, 30px);
+}
+
+.flower.two {
+   @include flower(4.5em, 17em, $color-accent, darken($color-accent, 10%), 1em, 90px);
+}
+
+

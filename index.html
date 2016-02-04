@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="A basic calculator made while learning with Free Code Camp.">
+        <meta name="author" content="Erin Manahan">
+        <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+        <title>FreeCodeCamp Calculator</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this project -->
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">FCC Calculator</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li id="nav-github"><a href="#github"><i class="fa fa-github"></i></a></li>
+                        <li id="nav-codepen"><a href="http://codepen.io/sonorangirl/pen/gPdOBX"><i class="fa fa-codepen"></i></a></li>
+                        <li class="contact"><a class="wide-tooltip" data-toggle="modal" data-target="#contactModal" data-hover="tooltip" data-trigger="hover" data-placement="bottom" title="Contact" href="#"><i class="fa fa-envelope contact"></i></a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     <h4 class="modal-title" id="myModalLabel">Contact</h4>
+                  </div>
+                  <div class="modal-body">
+                     <p>This project was created by Erin Manahan for <a href="http://www.freecodecamp.com">freeCodeCamp</a>. You can contact Erin at manahan.erin@gmail.com or on <a href="https://twitter.com/sonoran_girl"><i class="fa fa-twitter"></i> Twitter</a></p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+        <!-- Begin page content -->
+        <div class="flower one"><span></span></div>
+        <div class="flower two"><span></span></div>
+
+        <div class="container-fluid">
+      
+            <div class="row heading">
+                
+                <div class="col-lg-12">
+                    <h1 class="text-center heading">FreeCodeCamp Calculator</h1>
+                </div>
+
+            </div>
+
+            <div class="calculator-case">
+                
+                <div class="inner-case">
+
+                    <div class="row">
+                        <div id="screen" class="col-xs-12">0</div>
+                    </div>
+
+                    <div class="row">
+                        <div id="key7" class="col-xs-6 btn input-key" data-value="clear">Clear</div>
+                        <div id="key8" class="col-xs-6 btn input-key" data-value="delete">Delete</div>    
+                    </div>
+
+                    <div class="row">
+                        <div id="key7" class="col-xs-3 btn input-key" data-value="7">7</div>
+                        <div id="key8" class="col-xs-3 btn input-key" data-value="8">8</div>
+                        <div id="key9" class="col-xs-3 btn input-key" data-value="9">9</div>
+                        <div id="divide" class="col-xs-3 btn input-key" data-value="/">&divide;</div>
+                    </div>
+
+                    <div class="row">
+                        <div id="key4" class="col-xs-3 btn input-key" data-value="4">4</div>
+                        <div id="key5" class="col-xs-3 btn input-key" data-value="5">5</div>
+                        <div id="key6" class="col-xs-3 btn input-key" data-value="6">6</div>
+                        <div id="multiply" class="col-xs-3 btn input-key" data-value="*">&times;</div>
+                    </div>
+
+                    <div class="row">
+                        <div id="key1" class="col-xs-3 btn input-key" data-value="1">1</div>
+                        <div id="key2" class="col-xs-3 btn input-key" data-value="2">2</div>
+                        <div id="key3" class="col-xs-3 btn input-key" data-value="3">3</div>
+                        <div id="subtract" class="col-xs-3 btn input-key" data-value="-">-</div>
+                    </div>
+
+                    <div class="row">
+                        <div id="key0" class="col-xs-3 btn input-key" data-value="0">0</div>
+                        <div id="key-point" class="col-xs-3 btn input-key" data-value=".">.</div>
+                        <div id="equals" class="col-xs-3 btn input-key" data-value="=">&equals;</div>
+                        <div id="add" class="col-xs-3 btn input-key" data-value="+">&plus;</div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="flower one"><span></span></div>
+        <div class="flower two"><span></span></div>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">Made by Erin Manahan for <a href="freecodecamp.com">Free Code Camp</a>.</p>
+            </div>
+        </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/calculator-functions.js"></script>
+    
+        
+    </script>
+  </body>
+</html>
