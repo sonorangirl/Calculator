@@ -19,19 +19,19 @@ $font-weight--bold       : 700;
 
 // Descriptive Base Colors
 
-$Cyan: #01FDF6; //rgba(1, 253, 246, 100);
-$Turquoise: #03FCBA; //rgba(3, 252, 186, 100);
-$BilobaFlower: #CBBAED; //rgba(203, 186, 237, 100);
+$Onyx: #352D39;//#33E0DA; //#01FDF6; //rgba(1, 253, 246, 100);
+$KellyGreen: #3DAD18; //#3DAD18;//#23DBAA; //#03FCBA; //rgba(3, 252, 186, 100);
+$Tomato: #F06449; //#0CA7B2; //#DB183F; //rgba(203, 186, 237, 100);
 $OffWhite: #F2FFF8;
-$Niagra: #00BFBC; //old #0CA7B2
+$Niagra: #3DAD18; //#19B3C1; //#00BFBC; //old #0CA7B2
 
 // Color Usage
 
-$color-primary   : $Cyan;
-$color-secondary : $Turquoise;
+$color-primary   : $Onyx;
+$color-secondary : $KellyGreen;
 $color-light     : $OffWhite;
-$color-accent    : $BilobaFlower;
-$color-dark		 : $Niagra;
+$color-accent    : $Tomato;
+$color-dark		 : $KellyGreen;
 
 // Color Palette Modifiers
 

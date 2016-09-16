@@ -16,7 +16,7 @@ img {
 body {
   height: 100%;
   font-family: "Ovo", Georgia, serif;
-  background-color: #01FDF6;
+  background-color: #352D39;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   overflow: hidden; }
@@ -27,11 +27,11 @@ h3,
 h4,
 h5 {
   font-family: "Ovo", Georgia, serif;
-  color: #00BFBC; }
+  color: #3DAD18; }
 
 p {
   font-family: "Muli", Arial, sans-serif;
-  color: #00BFBC; }
+  color: #3DAD18; }
 
 body > .container-fluid {
   padding: 60px 15px 0; }
@@ -55,7 +55,7 @@ body > .container-fluid {
   color: #F2FFF8;
   font-weight: 400; }
   .navbar-default .navbar-brand:hover {
-    color: #03FCBA; }
+    color: #3DAD18; }
 .navbar-default .navbar-nav > li > a {
   color: #F2FFF8;
   font-weight: 500;
@@ -75,12 +75,12 @@ body > .container-fluid {
 .navbar-default .navbar-toggle {
   border-color: #F2FFF8; }
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #03FCBA; }
+    background-color: #3DAD18; }
   .navbar-default .navbar-toggle .icon-bar {
     color: #F2FFF8;
     background-color: #F2FFF8; }
 .navbar-default .navbar-collapse.collapse.in ul {
-  background-color: #03FCBA; }
+  background-color: #3DAD18; }
 
 /* .solid class attached on scroll past first section */
 .calculator-case {
@@ -92,7 +92,7 @@ body > .container-fluid {
   border: solid 4px #F2FFF8;
   padding: 0 15px;
   z-index: 100;
-  box-shadow: 9px 9px 6px 2px #cbbaed; }
+  box-shadow: 9px 9px 6px 2px #3dad18; }
   @media (max-width: 768px) {
     .inner-case {
       max-width: 75%; } }
@@ -106,10 +106,10 @@ body > .container-fluid {
   font-family: "Muli", Arial, sans-serif;
   border: solid 3px #F2FFF8;
   color: #F2FFF8;
-  background-color: #CBBAED; }
+  background-color: #F06449; }
 
 .input-key:hover {
-  background-color: #bca6e8;
+  background-color: #ee5031;
   color: #F2FFF8; }
 
 #screen {
@@ -133,21 +133,21 @@ body > .container-fluid {
   height: 60px;
   clear: both;
   padding-top: 20px;
-  background-color: #03FCBA;
+  background-color: #3DAD18;
   text-align: right; }
   .footer p {
     color: #F2FFF8; }
   .footer a {
-    color: #00BFBC; }
+    color: #352D39; }
     .footer a:hover {
-      color: #CBBAED; }
+      color: #F06449; }
 
 .flower {
   top: 10em;
   position: absolute;
   z-index: -1; }
   .flower span {
-    background: #03FCBA;
+    background: #3DAD18;
     width: .5em;
     height: 20em;
     display: block;
@@ -160,9 +160,9 @@ body > .container-fluid {
       left: 0.4em;
       top: 1.2em;
       display: block;
-      background: #03edaf;
+      background: #38a016;
       border-radius: 0em 3em 0em 2.5em;
-      box-shadow: 0 0 0 0.2em #03e3a7 inset;
+      box-shadow: 0 0 0 0.2em #359715 inset;
       position: absolute; }
     .flower span:before {
       content: '';
@@ -172,9 +172,9 @@ body > .container-fluid {
       left: -2.7em;
       top: 5.2em;
       display: block;
-      background: #03edaf;
+      background: #38a016;
       border-radius: 0em 3em 0em 2.5em;
-      box-shadow: 0 0 0 0.2em #03e3a7 inset;
+      box-shadow: 0 0 0 0.2em #359715 inset;
       position: absolute; }
 
 .flower.one {
@@ -184,10 +184,10 @@ body > .container-fluid {
   clip-path: polygon(37% 7%, 50% 10%, 63% 7%, 77% 10%, 96% 6%, 100% 100%, 0 100%, 4% 6%, 23% 10%);
   margin-top: 14em;
   margin-left: 30px;
-  background-color: #CBBAED;
+  background-color: #F06449;
   border-radius: 100%;
-  border: 1.1em solid #ad92e2;
-  box-shadow: 0 0 0 0.3em #a081de, 0 0 0 0.2em #d7caf1 inset; }
+  border: 1.1em solid #ec3c1a;
+  box-shadow: 0 0 0 0.3em #df3412, 0 0 0 0.2em #f2745c inset; }
   .flower.one span {
     top: 3.9em;
     left: 0.9em;
@@ -200,29 +200,29 @@ body > .container-fluid {
   clip-path: polygon(37% 7%, 50% 10%, 63% 7%, 77% 10%, 96% 6%, 100% 100%, 0 100%, 4% 6%, 23% 10%);
   margin-top: 17em;
   margin-left: 90px;
-  background-color: #CBBAED;
+  background-color: #F06449;
   border-radius: 100%;
-  border: 1em solid #ad92e2;
-  box-shadow: 0 0 0 0.3em #a081de, 0 0 0 0.2em #d7caf1 inset; }
+  border: 1em solid #ec3c1a;
+  box-shadow: 0 0 0 0.3em #df3412, 0 0 0 0.2em #f2745c inset; }
   .flower.two span {
     top: 3.8em;
     left: 0.9em;
     z-index: -10; }
 
 .modal-body p a {
-  color: #CBBAED; }
+  color: #3DAD18; }
   .modal-body p a:hover {
-    color: #03FCBA;
+    color: #352D39;
     text-decoration: none; }
 
 .modal-footer button {
   border-radius: 4px;
-  border-color: #00BFBC;
-  color: #00BFBC; }
+  border-color: #3DAD18;
+  color: #3DAD18; }
   .modal-footer button:hover {
-    background-color: #00BFBC;
-    border-color: #00BFBC;
-    color: white; }
+    background-color: #3DAD18;
+    border-color: #3DAD18;
+    color: #F2FFF8; }
 
 @media print {
   * {
