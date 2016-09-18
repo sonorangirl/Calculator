@@ -64,7 +64,7 @@ function calculation() {
 		//Just deletes the last number entered
 		if (value === "delete") {
 			numberArray.pop();
-			display.html("");
+			display.html(numberArray);
 			console.log('deleted');
 			return;
 		}
@@ -87,7 +87,7 @@ function calculation() {
 
 				
 			//if a number has been stored and a previous operator has been set, perform calculation
-			if ( !(newNumber === "") && !(operator === "") ) {
+			if ( (newNumber !== "") && (operator !== "") ) {
 				console.log('operator pressed, calculating...');
 				calculation();
 				newNumber = number;
